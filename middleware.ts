@@ -1,23 +1,36 @@
-import { NextResponse } from "next/server"
-import type { NextRequest } from "next/server"
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+import { verifySession } from "@/actions/auth";
 
-export function middleware(request: NextRequest) {
-  // Add your authentication logic here
-  // This is a basic example - implement proper authentication in production
-
-  if (request.nextUrl.pathname.startsWith("/presentation")) {
-    // Check if user is authenticated
-    const isAuthenticated = request.cookies.get("authenticated")
-
-    if (!isAuthenticated) {
-      return NextResponse.redirect(new URL("/product-overview", request.url))
+export async function middleware(request: NextRequest) {
+  if (request.nextUrl.pathname.startsWith("/password")) {
+    const session = request.cookies.get("knocard-session");
+    if (session) {
+      const isValidSession = await verifySession(session.value);
+      if (isValidSession) {
+        return NextResponse.redirect(new URL("/", request.url));
+      }
     }
+    return NextResponse.next();
   }
 
-  return NextResponse.next()
+  const session = request.cookies.get("knocard-session");
+
+  if (!session) {
+    return NextResponse.redirect(new URL("/password", request.url));
+  }
+
+  const isValidSession = await verifySession(session.value);
+
+  if (!isValidSession) {
+    const response = NextResponse.redirect(new URL("/password", request.url));
+    response.cookies.delete("knocard-session");
+    return response;
+  }
+
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: "/presentation/:path*",
-}
-
+  matcher: ["/home", "/section/:path*"],
+};
