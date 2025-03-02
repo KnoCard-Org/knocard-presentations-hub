@@ -46,13 +46,22 @@ export default function Home() {
 
           {/* Disabled Links */}
           {["Leaders Corner", "Leaders Edge", "Team Reporting", "Team Set-Up"].map((title, index) => (
-            <div key={index} className="flex flex-col items-center opacity-50 cursor-not-allowed">
-              <div className="w-40 h-40 rounded-full bg-white/80 p-4 border-4 border-yellow-400/50 shadow-lg">
-                <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-400 text-lg">Coming Soon</span>
+            <div className="flex flex-col items-center cursor-not-allowed" key={index}>
+              <div className="w-40 h-40 rounded-full bg-white p-4 border-4 border-yellow-400 shadow-lg">
+                <div className="w-full h-full rounded-full  flex items-center justify-center">
+                  <span className="text-4xl">
+                    <Image
+                      src={`/${index + 2}.png`}
+                      alt={title}
+                      width={150}
+                      height={150}
+                    />
+                  </span>
                 </div>
               </div>
-              <h3 className="mt-4 text-xl font-semibold text-center">{title}</h3>
+              <h3 className="mt-4 text-xl font-semibold text-center">
+                {title}
+              </h3>
             </div>
           ))}
         </div>
