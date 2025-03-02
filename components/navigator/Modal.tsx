@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Icon } from '@/app/product-overview/[section]/Header';
+import { Icon } from '@/app/p/product-overview/[section]/Header';
 
 export default function Modal({ isOpen, onClose }: {
     isOpen: boolean;

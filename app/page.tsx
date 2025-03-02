@@ -26,7 +26,7 @@ export default function Home() {
 
         {/* Presentation Icons */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
-          <Link href="/product-overview" className="transform hover:scale-105 transition-transform">
+          <Link href="/p/product-overview" className="transform hover:scale-105 transition-transform">
             <div className="flex flex-col items-center">
               <div className="w-40 h-40 rounded-full bg-white p-4 border-4 border-yellow-400 shadow-lg">
                 <div className="w-full h-full rounded-full  flex items-center justify-center">

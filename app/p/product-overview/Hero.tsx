@@ -123,61 +123,61 @@ const list = [
         id: 'media',
         title: 'Media',
         icon: '/icones/media.svg',
-        href: '/product-overview/media',
+        href: '/p/product-overview/media',
     }, {
         id: 'social',
         title: 'Social',
         icon: '/icones/social.svg',
-        href: '/product-overview/social',
+        href: '/p/product-overview/social',
     }, {
         id: 'feedback_forms',
         title: 'Feedback Forms',
         icon: '/icones/feedback_forms.svg',
-        href: '/product-overview/feedback_forms',
+        href: '/p/product-overview/feedback_forms',
     }, {
         id: 'referrals',
         title: 'Referrals',
         icon: '/icones/referrals.svg',
-        href: '/product-overview/referrals',
+        href: '/p/product-overview/referrals',
     }, {
         id: 'scan_business_card',
         title: 'Scan Business Card',
         icon: '/icones/scan_business_card.svg',
-        href: '/product-overview/scan_business_card',
+        href: '/p/product-overview/scan_business_card',
     }, {
         id: 'add_new_prospect',
         title: 'Add New Prospect',
         icon: '/icones/add_new_prospect.svg',
-        href: '/product-overview/add_new_prospect',
+        href: '/p/product-overview/add_new_prospect',
     }, {
         id: 'share',
         title: 'Share',
         icon: '/icones/share.svg',
-        href: '/product-overview/share',
+        href: '/p/product-overview/share',
     }, {
         id: 'team-and-groups',
         title: 'Team & Groups',
         icon: '/icones/team_&_groups.svg',
-        href: '/product-overview/team-and-groups',
+        href: '/p/product-overview/team-and-groups',
     }, {
         id: 'messaging',
         title: 'Messaging',
         icon: '/icones/messaging.svg',
-        href: '/product-overview/messaging',
+        href: '/p/product-overview/messaging',
     }, {
         id: 'knocard_link',
         title: 'KnoCard Link',
         icon: '/icones/knocard_link.svg',
-        href: '/product-overview/knocard_link',
+        href: '/p/product-overview/knocard_link',
     }, {
         id: 'reporting',
         title: 'Reporting',
         icon: '/icones/reporting.svg',
-        href: '/product-overview/reporting',
+        href: '/p/product-overview/reporting',
     }, {
         id: 'pipeline',
         title: 'Pipeline',
         icon: '/icones/pipeline.svg',
-        href: '/product-overview/pipeline',
+        href: '/p/product-overview/pipeline',
     }
 ]
