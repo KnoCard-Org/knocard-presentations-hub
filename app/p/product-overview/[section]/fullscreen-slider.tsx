@@ -64,8 +64,6 @@ function FullscreenImageSlider({ images, section }: { images: number, section: s
                 <motion.button
                     className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/70 rounded-full p-2"
                     onClick={handlePrevious}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
                 >
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 18L9 12L15 6" stroke="#007CB4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -74,8 +72,6 @@ function FullscreenImageSlider({ images, section }: { images: number, section: s
                 <motion.button
                     className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/70 rounded-full p-2"
                     onClick={handleNext}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
                 >
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 18L15 12L9 6" stroke="#007CB4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -130,7 +126,6 @@ function FullscreenImageSlider({ images, section }: { images: number, section: s
                                         backgroundColor: i === index ? '#007CB4' : 'white'
                                     }}
                                     initial={false}
-                                    animate={i === index ? { scale: 1.2 } : { scale: 1 }}
                                 ></motion.div>
                             ))}
                         </div>
