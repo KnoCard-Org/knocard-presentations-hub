@@ -112,7 +112,9 @@ function ImageSlider({ images, videos, section }: { images: number, videos: stri
 
                 {!isMobile && (
                     <>
-                        <Controls index={videoIndex} setIndex={setVideoIndex} media={videos} />
+                        <Controls
+                            maxIndex={videos.length - 1}
+                        />
                         <ul className='w-full overflow-hidden h-28 flex justify-center items-center'>
                             {Array.from({ length: images }).map((_, i) => (
                                 <motion.li
