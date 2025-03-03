@@ -30,7 +30,7 @@ function Page({ params }: { params: { section: string } }) {
             />
             <main className={"max-w-5xl mx-auto w-full  gap-2 md:gap-14 grid place-items-start md:grid-cols-2 mt-10"}>
 
-                <div className='w-full h-[640px]  relative border-yellow-300 border-2 '>
+                <div className='w-full h-[640px]  relative '>
                     <Image
                         src={`/iphone.png`}
                         alt={`Image iphone`}
@@ -40,7 +40,7 @@ function Page({ params }: { params: { section: string } }) {
 
                     />
                     <Image
-                        src={`/images/${info.id}/${imageIndex}.png`}
+                        src={`/images/${info.id}/${imageIndex + 1}.png`}
                         alt={`Image `}
                         width={400}
                         height={600}
