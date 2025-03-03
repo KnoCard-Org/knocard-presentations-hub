@@ -1,5 +1,6 @@
 import React from 'react'
 import { SliderProvider } from './slider-context'
+import { FullscreenProvider } from './fullscreen-context'
 
 function Layout({
     children
@@ -9,9 +10,13 @@ function Layout({
     }) {
     return (
         <SliderProvider>
-            {
-                children
-            }
+            <FullscreenProvider>
+
+                {
+                    children
+                }
+
+            </FullscreenProvider>
         </SliderProvider>
     )
 }

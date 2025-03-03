@@ -6,12 +6,18 @@ import Navbar from './NavBar'
 import ImageList from './image-list'
 import Image from 'next/image'
 import { useSlider } from './slider-context'
+import { useFullscreen } from './fullscreen-context'
+import FullscreenImageSlider from './fullscreen-slider'
 
 function Page({ params }: { params: { section: string } }) {
 
     const {
         imageIndex,
     } = useSlider()
+    const {
+        setFullscreen,
+        isFullscreen
+    } = useFullscreen()
     const info = content.find((item) => item.id === params.section)
 
     if (!info) return null
@@ -30,7 +36,11 @@ function Page({ params }: { params: { section: string } }) {
             />
             <main className={"max-w-5xl mx-auto w-full  gap-2 md:gap-14 grid place-items-start md:grid-cols-2 mt-10"}>
 
-                <div className='w-full h-[640px]  relative '>
+                <div className='w-full h-[640px]  relative '
+                    onClick={
+                        () => setFullscreen(true)
+                    }
+                >
                     <Image
                         src={`/iphone.png`}
                         alt={`Image iphone`}
@@ -47,19 +57,28 @@ function Page({ params }: { params: { section: string } }) {
                         className='absolute w-auto h-[96%] rounded-[38px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
 
                     />
+
                 </div>
                 <div>
 
                     <FAQ faqData={info.faq} />
                     <ImageList
                         images={info.images}
-                        videos={info.video}
                         section={info.id}
+                        max={info.images - 1}
                     />
                 </div>
 
             </main>
             <Navbar color={info.nav_color} />
+
+            {
+                isFullscreen &&
+                <FullscreenImageSlider
+                    images={info.images}
+                    section={info.id}
+                />
+            }
         </div>
     )
 }

@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { Controls } from './controls'
 import { useSlider } from './slider-context'
 
-function ImageList({ images, videos, section }: { images: number, videos: string[], section: string }) {
+function ImageList({ images, max, section }: { images: number, max: number, section: string }) {
     const {
         setImageIndex,
         setFullscreenImage,
@@ -46,7 +46,7 @@ function ImageList({ images, videos, section }: { images: number, videos: string
         </ul>
     ) : (
         <>
-            <Controls index={0} setIndex={() => { }} media={videos} />
+            <Controls maxIndex={max} />
             <ul className='w-full overflow-hidden h-28 flex justify-center items-center'>
                 {Array.from({ length: images }).map((_, i) => (
                     <motion.li
