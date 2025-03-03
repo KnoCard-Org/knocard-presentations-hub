@@ -28,15 +28,15 @@ const FAQ: React.FC<{ faqData: FAQItem[] }> = ({
     };
 
     return (
-        <div className="w-full overflow-hidden">
+        <div className="w-full p-2">
             {faqData.map((item, index) => (
                 <motion.div
                     key={index}
                     initial={false}
-                    className="mb-2 rounded-md overflow-hidden bg-[#007bb4c9] text-white"
+                    className="mb-2 rounded-md overflow-hidden bg-[#007bb4c9] text-white min-w-full w-[95vw] "
                 >
                     <motion.button
-                        className="w-full text-left font-semibold p-2 md:p-4 flex justify-between items-center"
+                        className=" w-full text-left font-semibold p-2 md:p-4 flex justify-between items-center  "
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                         onClick={() => toggleExpand(index)}

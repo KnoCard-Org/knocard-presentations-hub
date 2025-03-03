@@ -24,7 +24,7 @@ function Page({ params }: { params: { section: string } }) {
 
 
     return (
-        <div className={`flex flex-col  h-screen overflow-hidden w-full gap-10 p-4`}
+        <div className={`flex flex-col  h-screen overflow-hidden w-full md:gap-10 md:p-4`}
             style={{
                 background: `url(${info.bg}) no-repeat center center fixed`,
                 backgroundSize: 'cover',
@@ -34,9 +34,9 @@ function Page({ params }: { params: { section: string } }) {
                 color={info.nav_color}
                 section={info?.title || ''}
             />
-            <main className={"max-w-5xl mx-auto w-full  gap-2 md:gap-14 grid place-items-start md:grid-cols-2 mt-10"}>
+            <main className={"md:max-w-5xl  mx-auto w-full  gap-2 md:gap-14 grid place-items-start md:grid-cols-2 md:mt-10 mt-5"}>
 
-                <div className='w-full h-[640px]  relative '
+                <div className='w-full md:h-[640px] h-[360px] relative  '
                     onClick={
                         () => setFullscreen(true)
                     }
@@ -54,12 +54,12 @@ function Page({ params }: { params: { section: string } }) {
                         alt={`Image `}
                         width={400}
                         height={600}
-                        className='absolute w-auto h-[96%] rounded-[38px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+                        className='absolute w-auto h-[96%] md:rounded-[38px] rounded-[18px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
 
                     />
 
                 </div>
-                <div>
+                <div className='overflow-hidden'>
 
                     <FAQ faqData={info.faq} />
                     <ImageList

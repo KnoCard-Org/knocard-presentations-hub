@@ -14,7 +14,7 @@ function ImageList({ images, max, section }: { images: number, max: number, sect
     } = useSlider()
 
     return isMobile ? (
-        <ul className='w-full overflow-hidden h-28 flex justify-center items-center'>
+        <ul className='w-full  h-28  justify-center items-center overflow-scroll hidden md:flex'>
             {Array.from({ length: images }).map((_, i) => (
                 <motion.li
                     key={i}
