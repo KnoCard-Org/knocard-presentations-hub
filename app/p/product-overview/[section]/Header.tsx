@@ -17,7 +17,7 @@ const Header = ({ section, color }: { section: string, color: string }) => {
 
 
     return (
-        <header className="flex justify-center items-center gap-2 sm:gap-3 p-2 sm:p-4">
+        <header className="absolute top-0 right-10 justify-center items-center gap-2 sm:gap-3 p-2 sm:p-4">
             <Icon color={color} section={section} className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-[500] capitalize text-center"
                 style={{

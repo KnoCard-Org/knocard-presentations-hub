@@ -33,7 +33,7 @@ const FAQ: React.FC<{ faqData: FAQItem[] }> = ({
                 <motion.div
                     key={index}
                     initial={false}
-                    className="mb-2 rounded-md overflow-hidden bg-[#007CB480] text-white"
+                    className="mb-2 rounded-md overflow-hidden bg-[#007bb4c9] text-white"
                 >
                     <motion.button
                         className="w-full text-left font-semibold p-2 md:p-4 flex justify-between items-center"

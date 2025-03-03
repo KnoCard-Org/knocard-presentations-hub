@@ -2,15 +2,20 @@
 import React from 'react'
 import Header from './Header'
 import FAQ from './Faq'
-import ImageSlider from './Slider'
 import Navbar from './NavBar'
+import ImageList from './image-list'
+import Image from 'next/image'
+import { useSlider } from './slider-context'
 
 function Page({ params }: { params: { section: string } }) {
 
-
+    const {
+        imageIndex,
+    } = useSlider()
     const info = content.find((item) => item.id === params.section)
 
     if (!info) return null
+
 
     return (
         <div className={`flex flex-col  h-screen overflow-hidden w-full gap-10 p-4`}
@@ -23,14 +28,36 @@ function Page({ params }: { params: { section: string } }) {
                 color={info.nav_color}
                 section={info?.title || ''}
             />
-            <main className={"max-w-5xl mx-auto w-full gap-2 md:gap-14 grid place-items-start md:grid-cols-2"}>
-                <FAQ faqData={info.faq} />
+            <main className={"max-w-5xl mx-auto w-full  gap-2 md:gap-14 grid place-items-start md:grid-cols-2 mt-10"}>
 
-                <ImageSlider
-                    images={info.images}
-                    videos={info.video}
-                    section={info.id}
-                />
+                <div className='w-full h-[640px]  relative border-yellow-300 border-2 '>
+                    <Image
+                        src={`/iphone.png`}
+                        alt={`Image iphone`}
+                        width={400}
+                        height={600}
+                        className='absolute  w-auto h-full rounded-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+
+                    />
+                    <Image
+                        src={`/images/${info.id}/${imageIndex}.png`}
+                        alt={`Image `}
+                        width={400}
+                        height={600}
+                        className='absolute w-auto h-[96%] rounded-[38px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+
+                    />
+                </div>
+                <div>
+
+                    <FAQ faqData={info.faq} />
+                    <ImageList
+                        images={info.images}
+                        videos={info.video}
+                        section={info.id}
+                    />
+                </div>
+
             </main>
             <Navbar color={info.nav_color} />
         </div>
