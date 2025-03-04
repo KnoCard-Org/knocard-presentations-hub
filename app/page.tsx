@@ -49,14 +49,13 @@ export default function Home() {
             <div className="flex flex-col items-center cursor-not-allowed" key={index}>
               <div className="w-40 h-40 rounded-full bg-white p-4 border-4 border-yellow-400 shadow-lg">
                 <div className="w-full h-full rounded-full  flex items-center justify-center">
-                  <span className="text-4xl">
-                    <Image
-                      src={`/${index + 2}.png`}
-                      alt={title}
-                      width={150}
-                      height={150}
-                    />
-                  </span>
+                  <Image
+                    src={`/${index + 2}.png`}
+                    alt={title}
+                    width={150}
+                    height={150}
+                    className="w-[80%]"
+                  />
                 </div>
               </div>
               <h3 className="mt-4 text-xl font-semibold text-center">
