@@ -75,11 +75,11 @@ function Page({ params }: { params: { section: string } }) {
                     }
 
                 </div>
-                <div className='overflow-hidden'>
+                <div className='overflow-hidden max-w-full w-full'>
 
                     <FAQ faqData={info.faq} />
                     <ImageList
-                        images={info.images}
+                        images={info.images + 1}
                         section={info.id}
                         max={info.images - 1}
                     />
@@ -91,7 +91,7 @@ function Page({ params }: { params: { section: string } }) {
             {
                 isFullscreen &&
                 <FullscreenImageSlider
-                    images={info.images}
+                    images={info.images + 1}
                     section={info.id}
                 />
             }
