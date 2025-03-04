@@ -23,12 +23,12 @@ export function FullscreenProvider({ children }: FullscreenProviderProps) {
     const [isZoomed, setIsZoomed] = useState(false)
 
     const {
-        imageIndex,
-        setImageIndex
+        Index,
+        setIndex
     } = useSlider()
     const value = {
-        index: imageIndex,
-        setIndex: setImageIndex,
+        index: Index,
+        setIndex: setIndex,
         isFullscreen,
         setFullscreen,
         isZoomed,

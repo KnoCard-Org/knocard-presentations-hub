@@ -3,14 +3,10 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 
 interface SliderContextType {
-    imageIndex: number
-    setImageIndex: (index: number) => void
-    videoIndex: number
-    setVideoIndex: (index: number) => void
-    fullscreenVideo: boolean
-    setFullscreenVideo: (value: boolean) => void
-    fullscreenImage: boolean
-    setFullscreenImage: (value: boolean) => void
+    Index: number
+    setIndex: (index: number) => void
+    fullscreen: boolean
+    setFullscreen: (value: boolean) => void
     isMobile: boolean
 }
 
@@ -21,10 +17,8 @@ interface SliderProviderProps {
 }
 
 export function SliderProvider({ children }: SliderProviderProps) {
-    const [imageIndex, setImageIndex] = useState(0)
-    const [videoIndex, setVideoIndex] = useState(0)
-    const [fullscreenVideo, setFullscreenVideo] = useState(false)
-    const [fullscreenImage, setFullscreenImage] = useState(false)
+    const [Index, setIndex] = useState(0)
+    const [fullscreen, setFullscreen] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
 
     useEffect(() => {
@@ -35,15 +29,11 @@ export function SliderProvider({ children }: SliderProviderProps) {
     }, [])
 
     const value = {
-        imageIndex,
-        setImageIndex,
-        videoIndex,
-        setVideoIndex,
-        fullscreenVideo,
-        setFullscreenVideo,
-        fullscreenImage,
-        setFullscreenImage,
+        Index,
+        setIndex,
         isMobile,
+        fullscreen,
+        setFullscreen
     }
 
     return (

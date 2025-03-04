@@ -50,12 +50,22 @@ function FullscreenImageSlider({ images, section }: { images: number, section: s
                                 className="h-full w-auto transition-all duration-300 ease-in-out"
                             />
                             <div className="absolute top-[2%] left-[5%] right-[5%] bottom-[3%] overflow-hidden rounded-[19px] transition-all duration-300 ease-in-out">
-                                <Image
-                                    src={`/images/${section}/${index + 1}.png`}
-                                    alt='image'
-                                    layout="fill"
-                                    objectFit="cover"
-                                />
+                                {
+                                    index === 0 ?
+                                        <video
+                                            src={`/images/${section}/1.mp4`}
+                                            autoPlay
+                                            controls
+                                            className="w-full h-full"
+                                        />
+                                        :
+                                        <Image
+                                            src={`/images/${section}/${index + 1}.png`}
+                                            alt='image'
+                                            layout="fill"
+                                            objectFit="cover"
+                                        />
+                                }
                             </div>
                         </motion.div>
                     </AnimatePresence>
