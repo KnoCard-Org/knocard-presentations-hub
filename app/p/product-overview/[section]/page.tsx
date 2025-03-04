@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import Header from './Header'
 import FAQ from './Faq'
 import Navbar from './NavBar'
 import ImageList from './image-list'
@@ -30,10 +29,7 @@ function Page({ params }: { params: { section: string } }) {
                 backgroundSize: 'cover',
             }}
         >
-            <Header
-                color={info.nav_color}
-                section={info?.title || ''}
-            />
+
             <main className={"md:max-w-5xl  mx-auto w-full  gap-2 md:gap-14 grid place-items-start md:grid-cols-2 md:mt-10 mt-5"}>
 
                 <div className='w-full md:h-[640px] h-[360px] relative  '
@@ -101,13 +97,13 @@ function Page({ params }: { params: { section: string } }) {
 
 export default Page
 
-const content = [
+export const content = [
     {
         id: "messaging",
         title: "Messaging",
         icon: "/icones/messaging.svg",
-        href: "/section/messaging",
-        bg: "/bg/messaging.svg",
+        href: "/p/product-overview/messaging",
+        bg: "/bg/messaging.jpg",
         nav_color: '#007CB4',
         faq: [
             {
@@ -139,11 +135,11 @@ const content = [
         ]
     },
     {
-        id: "knocard_link",
-        title: "KnoCard Link",
-        icon: "/icones/knocard_link.svg",
-        href: "/section/knocard_link",
-        bg: "/bg/knocard_link.svg",
+        id: "dashboard",
+        title: "Dashboard",
+        icon: "/icones/dashboard.svg",
+        href: "/p/product-overview/dashboard",
+        bg: "/bg/dashboard.jpg",
         nav_color: "#fff",
         faq: [
             {
@@ -176,8 +172,8 @@ const content = [
         id: "media",
         title: "Media",
         icon: "/icones/media.svg",
-        href: "/section/media",
-        bg: "/bg/media.svg",
+        href: "/p/product-overview/media",
+        bg: "/bg/media.jpg",
         nav_color: '#fff',
         faq: [
             {
@@ -212,9 +208,9 @@ const content = [
         id: "social",
         title: "Social",
         icon: "/icones/social.svg",
-        href: "/section/social",
+        href: "/p/product-overview/social",
         nav_color: '#fff',
-        bg: "/bg/social.svg",
+        bg: "/bg/social.jpg",
         faq: [
             {
                 q: "What is the Social?",
@@ -248,9 +244,9 @@ const content = [
         id: "feedback_forms",
         title: "Feedback Forms",
         icon: "/icones/feedback_forms.svg",
-        href: "/section/feedback_forms",
+        href: "/p/product-overview/feedback_forms",
         nav_color: '#007CB4',
-        bg: "/bg/feedback_forms.svg",
+        bg: "/bg/feedback_forms.jpg",
         faq: [
             {
                 q: "What are the Feedback Forms?",
@@ -284,9 +280,9 @@ const content = [
         id: "referrals",
         title: "Referrals",
         icon: "/icones/referrals.svg",
-        href: "/section/referrals",
+        href: "/p/product-overview/referrals",
         nav_color: '#fff',
-        bg: "/bg/referrals.svg",
+        bg: "/bg/referrals.jpg",
         faq: [
             {
                 q: "What are the Referrals?",
@@ -321,9 +317,9 @@ const content = [
         id: "scan_business_card",
         title: "Scan Business Card",
         icon: "/icones/scan_business_card.svg",
-        href: "/section/scan_business_card",
+        href: "/p/product-overview/scan_business_card",
         nav_color: '#fff',
-        bg: "/bg/scan_business_card.svg",
+        bg: "/bg/scan_business_card.jpg",
         faq: [
             {
                 q: "What is Scan Business Card?",
@@ -358,9 +354,9 @@ const content = [
         id: "add_new_prospect",
         title: "Add New Prospect",
         icon: "/icones/add_new_prospect.svg",
-        href: "/section/add_new_prospect",
+        href: "/p/product-overview/add_new_prospect",
         nav_color: '#fff',
-        bg: "/bg/add_new_prospect.svg",
+        bg: "/bg/add_new_prospect.jpg",
         faq: [
             {
                 q: "What is Add New Prospect?",
@@ -394,9 +390,9 @@ const content = [
         id: "share",
         title: "Share",
         icon: "/icones/share.svg",
-        href: "/section/share",
+        href: "/p/product-overview/share",
         nav_color: '#007CB4',
-        bg: "/bg/share.svg",
+        bg: "/bg/sharing.jpg",
         faq: [
             {
                 q: "What is Share?",
@@ -426,12 +422,12 @@ const content = [
         ]
     },
     {
-        id: "team-and-groups",
-        title: "Team & Groups",
-        icon: "/icones/team_&_groups.svg",
-        href: "/section/team_&_groups",
+        id: "goal-setting",
+        title: "Goal Setting",
+        icon: "/icones/goal_setting.svg",
+        href: "/p/product-overview/goal-setting",
         nav_color: '#fff',
-        bg: "/bg/team_&_groups.svg",
+        bg: "/bg/goal_setting.jpg",
         faq: [
             {
                 q: "What are Team & Groups?",
@@ -460,16 +456,16 @@ const content = [
         ],
         images: 5,
         video: [
-            "/videos/team/1.mp4",
+            "/videos/goal-setting/1.mp4",
         ]
     },
     {
         id: "reporting",
         title: "Reporting",
         icon: "/icones/reporting.svg",
-        href: "/section/reporting",
+        href: "/p/product-overview/reporting",
         nav_color: '#007CB4',
-        bg: "/bg/reporting.svg",
+        bg: "/bg/reporting.jpg",
         faq: [
             {
                 q: "What is Reporting?",
@@ -503,9 +499,9 @@ const content = [
         id: "pipeline",
         title: "Pipeline",
         icon: "/icones/pipeline.svg",
-        href: "/section/pipeline",
+        href: "/p/product-overview/pipeline",
         nav_color: '#fff',
-        bg: "/bg/pipeline.svg",
+        bg: "/bg/pipeline.jpg",
         faq: [
             {
                 q: "What is Pipeline?",
