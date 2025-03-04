@@ -11,8 +11,8 @@ export function Controls({
 }) {
 
     const {
-        imageIndex,
-        setImageIndex,
+        Index,
+        setIndex,
     } = useSlider()
     return (
         <motion.div
@@ -22,8 +22,8 @@ export function Controls({
             transition={{ delay: 0.7 }}
         >
             <motion.button
-                onClick={() => setImageIndex(imageIndex - 1)}
-                disabled={imageIndex === 0}
+                onClick={() => setIndex(Index - 1)}
+                disabled={Index === 0}
                 className='disabled:opacity-50 bg-white my-2 rounded-full p-4'
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -32,9 +32,9 @@ export function Controls({
 
             </motion.button>
             <motion.button
-                onClick={() => setImageIndex(imageIndex + 1)}
+                onClick={() => setIndex(Index + 1)}
                 className='disabled:opacity-50 bg-white my-2 rounded-full p-4'
-                disabled={imageIndex === maxIndex}
+                disabled={Index === maxIndex}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
             >

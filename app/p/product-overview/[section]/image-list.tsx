@@ -5,13 +5,17 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Controls } from './controls'
 import { useSlider } from './slider-context'
+import { useFullscreen } from './fullscreen-context'
 
 function ImageList({ images, max, section }: { images: number, max: number, section: string }) {
     const {
-        setImageIndex,
-        setFullscreenImage,
+        setIndex,
         isMobile,
     } = useSlider()
+
+    const {
+        setFullscreen
+    } = useFullscreen()
 
     return isMobile ? (
         <ul className='w-full  h-28  justify-center items-center overflow-scroll hidden md:flex'>
@@ -23,8 +27,8 @@ function ImageList({ images, max, section }: { images: number, max: number, sect
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.1 }}
                     onClick={() => {
-                        setFullscreenImage(true)
-                        setImageIndex(i)
+                        setFullscreen(true)
+                        setIndex(i)
                     }}
                 >
                     <Image
@@ -56,8 +60,8 @@ function ImageList({ images, max, section }: { images: number, max: number, sect
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: i * 0.1 }}
                         onClick={() => {
-                            setFullscreenImage(true)
-                            setImageIndex(i)
+                            setFullscreen(true)
+                            setIndex(i)
                         }}
                     >
                         <Image
