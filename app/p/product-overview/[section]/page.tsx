@@ -97,7 +97,7 @@ function Page({ params }: { params: { section: string } }) {
 
 export default Page
 
-export const content = [
+const content = [
     {
         id: "messaging",
         title: "Messaging",
