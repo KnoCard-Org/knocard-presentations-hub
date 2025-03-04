@@ -143,29 +143,33 @@ const content = [
         nav_color: "#fff",
         faq: [
             {
-                q: "What is the KnoCard Link?",
+                q: "What is the KnoCard Dashboard?",
                 a: [
-                    "An innovative coaching platform designed to empower team leaders by providing access to members’ reports, aiding in business growth.",
+                    "Your central hub for managing, tracking, and growing your business.",
+                    'Available via mobile app and KnoCard.com, making it accessible anywhere.',
+                    "Provides a clean, intuitive design to keep users engaged in income-producing activities."
                 ],
             },
             {
-                q: "How does KnoCard Link work?",
+                q: "How does the KnoCard Dashboard work?",
                 a: [
-                    "Team leaders send a consent request to team members who have asked for guidance.",
-                    "Once consent is granted, the leader’s dashboard displays detailed reports, offering a comprehensive view of the member’s sharing activities and results.",
+                    "Displays essential sections like Goals, Media, Reporting, and Pipeline.",
+                    "The Smiley Face button makes instant sharing quick and easy.",
+                    "Sends real-time notifications about prospect activity to ensure timely follow-ups."
                 ],
             },
             {
                 q: "Competitor's Edge",
                 a: [
-                    "Unlike other systems that leave leaders to coach without data, KnoCard Link provides crucial insights for effective team management.",
-                    "The platform eliminates wasted time by ensuring leaders only assist team members actively working on their business, thanks to its accountability-based approach.",
+                    "Automated tracking removes the need for manual data entry.",
+                    "Mobile-first design ensures speed and efficiency.",
+                    "Keeps users focused on high-value business actions that drive results.",
                 ],
             },
         ],
         images: 5,
         video: [
-            "/videos/knocard-link/1.mp4",
+            "/videos/dashboard/1.mp4",
         ]
     },
     {
@@ -179,23 +183,25 @@ const content = [
             {
                 q: "What is the Media?",
                 a: [
-                    "Photos, videos, PDF files are quickly and easily added to Media section",
-                    "Files may be added individually or in groups",
-                    "Organize and group similar media files by creating topics and adding relevant files to them",
+                    "A centralized library for storing, organizing, and sharing business content.",
+                    "Users can upload videos, PDFs, images, and audio files.",
+                    "Every media share is tracked in real-time to measure engagement.",
                 ],
             },
             {
-                q: "How does Media work?",
+                q: "How does KnoCard Media work?",
                 a: [
-                    "KnoCard user adds media files from mobile device, laptop or desktop",
-                    "Media files can be viewed either from the Media page of the KnoCard or by clicking on a dedicated link",
+                    "Users can upload, edit, and organize content for easy access.",
+                    "KnoCard tracks who viewed media, how long they watched, and what they clicked next.",
+                    "Content can be shared via text, email, or KnoCard Social.",
                 ],
             },
             {
                 q: "Competitor's Edge",
                 a: [
-                    "Unlike other platforms, which don’t offer insights into viewer preferences, KnoCard allows media files to be sent with an attached feedback form",
-                    "KnoCard’s media files are accessible via a link, requiring only an internet connection to view—no app download needed, unlike other platforms.",
+                    "Unlike CRMs, KnoCard tracks media engagement, providing better insights.",
+                    "Eliminates the need for third-party file-sharing tools.",
+                    "Helps businesses send high-quality, trackable content in seconds."
                 ],
             },
         ],
@@ -213,25 +219,27 @@ const content = [
         bg: "/bg/social.jpg",
         faq: [
             {
-                q: "What is the Social?",
+                q: "What is KnoCard Social?",
                 a: [
-                    "Business focused social media platform.",
-                    "Provides source for users to share and receive information that is not clouded by distractions and chaos.",
+                    "A business-focused social network built into KnoCard.",
+                    "No ads, distractions, or off-topic content—just professional networking.",
+                    "Allows users to build an audience and expand their reach."
                 ],
             },
             {
-                q: "How does Social work?",
+                q: "How does KnoCard Social work?",
                 a: [
-                    "Modeled after traditional social media platforms, KnoCard Social provides the ability to post content, videos, and photos - and to share and interact on the platform.",
-                    "Non KnoCard users are offered a free, Social Only platform.",
-                    "Team and Group leaders’ posts are served to all group members, providing an instantaneous communication tool.",
+                    "Users can post updates, videos, and business insights to engage their audience.",
+                    "Every post is delivered to 100% of followers—no algorithm limitations.",
+                    "Seamlessly integrates with sharing, engagement tracking, and KnoCard Pipeline."
                 ],
             },
             {
                 q: "Competitor's Edge",
                 a: [
-                    "Traditional social platforms were never intended for business purposes but have been used in lieu of lack of a better solution.",
-                    "KnoCard Social IS the solution!",
+                    "No visibility restrictions—users reach their entire audience.",
+                    "Unlike Facebook or LinkedIn, KnoCard focuses solely on business growth.",
+                    "All engagement is tracked, allowing strategic follow-ups."
                 ],
             },
         ],
@@ -249,25 +257,26 @@ const content = [
         bg: "/bg/feedback_forms.jpg",
         faq: [
             {
-                q: "What are the Feedback Forms?",
+                q: "What are KnoCard Feedback Forms?",
                 a: [
-                    "Attached to media files that are shared with prospects.",
-                    "Provides valuable insight to guide follow up.",
+                    "A built-in tool that gathers instant feedback from prospects.",
+                    "Helps users understand interest levels before making a follow-up.",
+                    "Increases engagement by providing quick, simple responses."
                 ],
             },
             {
-                q: "How do Feedback Forms work?",
+                q: "How do KnoCard Feedback Forms work?",
                 a: [
-                    "User may attach a default questionnaire or create a custom form.",
-                    "Form is displayed to recipient after media is viewed.",
-                    "Feedback results are reported to KnoCard user.",
+                    "Users attach a custom feedback form to shared media.",
+                    "Prospects answer questions like “Are you interested?” or “Would you like to learn more?”.",
+                    "KnoCard logs the responses in real-time, updating the Pipeline."
                 ],
             },
             {
                 q: "Competitor's Edge",
                 a: [
-                    "Eliminates rejection by eliminating awkward follow up conversations.",
-                    "With a clear understanding of the recipients’ likes, dislikes, and interests, KnoCard user is able to identify which prospects are hot or cold, and steer follow up conversations based on viewers’ interests.",
+                    "Eliminates guessing—users know exactly who’s interested.",
+                    "Traditional methods require manual follow-ups—KnoCard automates this process.",
                 ],
             },
         ],
@@ -285,26 +294,26 @@ const content = [
         bg: "/bg/referrals.jpg",
         faq: [
             {
-                q: "What are the Referrals?",
+                q: "What is KnoCard Referrals?",
                 a: [
-                    "Revolutionary tool promotes simple, effective sharing of referrals",
-                    "Text based; send a referral in seconds.",
+                    "A fully trackable referral system that turns word-of-mouth marketing into results.",
+                    "Allows users to refer business contacts quickly and efficiently.",
+                    "Referrals are logged and tracked, ensuring no missed opportunities."
                 ],
             },
             {
-                q: "How do Referrals work?",
+                q: "How does KnoCard Referrals work?",
                 a: [
-                    "Search for KnoCard user & select Share Referral.",
-                    "Search contacts to locate desired recipient.",
-                    "Text message is sent with pre-populated message and KnoCard link.",
-                    "KnoCard user receives a notification to alert of an incoming referral.",
+                    "Users can refer contacts directly from the app.",
+                    "KnoCard tracks the referral, logging it in the Pipeline.",
+                    "The referred person receives an instant notification with business details."
                 ],
             },
             {
                 q: "Competitor's Edge",
                 a: [
-                    "Most referrals die on the spot due to lack of access to business card or business info; with KnoCard, referral info is always as close as your phone.",
-                    "KnoCard alerts users who have received referrals, and provides recipient information upon receiving consent.",
+                    "Unlike traditional referrals, KnoCard tracks every step.",
+                    "No lost or forgotten recommendations—everything is logged."
                 ],
             },
         ],
@@ -322,26 +331,26 @@ const content = [
         bg: "/bg/scan_business_card.jpg",
         faq: [
             {
-                q: "What is Scan Business Card?",
+                q: "What is KnoCard Scan Business Card?",
                 a: [
-                    "Transforms outdated business cards into valuable leads.",
-                    "Digitally stores contact data and images.",
+                    "A digital solution to capture and track business card contacts.",
+                    "Converts paper business cards into trackable digital leads.",
+                    "Ensures every new contact is stored, organized, and followed up on."
                 ],
             },
             {
-                q: "How does Scan Business Card work?",
+                q: "How does KnoCard Scan Business Card work?",
                 a: [
-                    "The user scans a business card or takes a photo; OCR technology converts the contact information into a digital format.",
-                    "The business card owner is automatically added as a new contact and integrated into the KnoCard user’s pipeline.",
-                    "The business card owner (prospect) receives a text message from the KnoCard user, which includes a pre-written message and a link to the KnoCard.",
-                    "The prospect’s viewing activity is tracked and reported back to the KnoCard user.",
+                    "Users scan a physical business card using the KnoCard app.",
+                    "Contact info is saved automatically and linked to the Pipeline.",
+                    "KnoCard sends an instant message to the new contact with business details."
                 ],
             },
             {
                 q: "Competitor's Edge",
                 a: [
-                    "As opposed to traditional business card scanners, KnoCard offers a quick way to access and manage the captured information.",
-                    "KnoCard Reporting monitors the prospect’s activity and provides detailed data not available through other card scanners.",
+                    "Traditional business cards get lost—KnoCard digitizes them instantly.",
+                    "No manual data entry required."
                 ],
             },
         ],
@@ -395,24 +404,26 @@ const content = [
         bg: "/bg/sharing.jpg",
         faq: [
             {
-                q: "What is Share?",
+                q: "What is KnoCard Sharing?",
                 a: [
-                    "Effective system for transmitting business information to leads and prospects",
+                    "The foundation of business growth through direct text messaging.",
+                    "Provides multiple sharing options, including KnoCard, Media, Referrals, and Review Requests.",
+                    "Ensures 100% deliverability with instant tracking."
                 ],
             },
             {
-                q: "How does Share work?",
+                q: "How does KnoCard Sharing work?",
                 a: [
-                    "User selects content to be shared and chooses to share with a KnoCard user, new prospect, existing contact, or as a copied link.",
-                    "Information is sent via text message to new and existing prospects, and shared via in-app messaging with KnoCard users.",
-                    "Shares and viewing activity are tracked and reported.",
+                    "Users share their KnoCard, media, and referrals via text, email, or KnoCard Social.",
+                    "KnoCard tracks every interaction, including video plays and responses.",
+                    "Users can request reviews, scan business cards, and add new prospects directly from the Share menu."
                 ],
             },
             {
                 q: "Competitor's Edge",
                 a: [
-                    "Recipients are not required to download an app to view content.",
-                    "Information is delivered through a trusted source, via text message using personal mobile number, or directly inside the KnoCard app.",
+                    "Unlike email, KnoCard sharing ensures high engagement and visibility.",
+                    "Tracks every share so users know who is engaging with their content."
                 ],
             },
         ],
@@ -468,25 +479,27 @@ const content = [
         bg: "/bg/reporting.jpg",
         faq: [
             {
-                q: "What is Reporting?",
+                q: "What is KnoCard Reporting?",
                 a: [
-                    "Powerful system that incorporates data analytics to generate a smooth, rejection free sales process",
-                    "Provides valuable insight that filters out the no’s and ensures users they are not doing business in the dark",
+                    "A real-time analytics system that tracks engagement and business growth.",
+                    "Provides insights into what content is working and where prospects are in the sales process.",
+                    "Eliminates guesswork by offering data-driven insights into user behavior."
                 ],
             },
             {
-                q: "How does Reporting work?",
+                q: "How does KnoCard Reporting work?",
                 a: [
-                    "Platform captures contact information of leads whom KnoCard user has shared with, including new prospects who have been added by user or completed a lead capture form.",
-                    "System tracks shares, clicks, and feedback form results.",
-                    "KnoCard Reporting categorizes, filters, and displays viewers’ activity.",
+                    "Monitors new prospects, share history, and media engagement.",
+                    "Users can filter reports by day, week, or month for easy analysis.",
+                    "Integrates with the Pipeline, allowing precise follow-ups with engaged prospects."
                 ],
             },
             {
                 q: "Competitor's Edge",
                 a: [
-                    "First of its kind rejection free system encourages high share rates.",
-                    "Promotes effective time management, giving users the ability to spend time and effort only on interested prospects.",
+                    "Unlike CRMs, KnoCard automatically tracks engagement with no manual input.",
+                    "Provides clear, actionable insights, not just raw data.",
+                    "Ensures 100% visibility—users know exactly who to follow up with and when."
                 ],
             },
         ],
@@ -504,25 +517,28 @@ const content = [
         bg: "/bg/pipeline.jpg",
         faq: [
             {
-                q: "What is Pipeline?",
+                q: "What is the KnoCard Pipeline?",
                 a: [
-                    "Integrated CRM solution connecting all aspects of your business network.",
-                    "Manages sharing, reporting, scheduling, tasks, follow-ups, and sales within a single platform.",
+                    "A real-time tracking system that monitors every prospect interaction.",
+                    "Organizes new, warm, and active leads for effective follow-ups.",
+                    "Provides a structured workflow to maximize conversions.",
+
                 ],
             },
             {
-                q: "How does Pipeline work?",
+                q: "How does the KnoCard Pipeline work?",
                 a: [
-                    "Seamlessly tracks and manages contacts once integrated.",
-                    "Automatically captures and stores all interactions, engagements, and analytics.",
+                    "Tracks every KnoCard share and engagement activity.",
+                    "Users receive instant notifications when a prospect interacts.",
+                    "Filters prospects by activity level—most active, least active, and new contacts."
                 ],
             },
             {
                 q: "Competitor's Edge",
                 a: [
-                    "Unlike other CRMs that require manual imports, Knocard Pipeline integrates all business activities in one place.",
-                    "Tracks shares, engagements, analytics, and follow-ups comprehensively.",
-                    "Simplifies workflows and enhances productivity, offering a competitive advantage.",
+                    "No manual data entry required—data updates automatically.",
+                    "Focuses on warm, engaged leads, not just mass outreach.",
+                    "Eliminates missed follow-ups, ensuring higher conversion rates."
                 ],
             },
         ],
