@@ -147,20 +147,20 @@ const list = [
         icon: '/icones/share.svg',
         href: '/p/product-overview/share',
     }, {
-        id: 'team-and-groups',
-        title: 'Team & Groups',
-        icon: '/icones/team_&_groups.svg',
-        href: '/p/product-overview/team-and-groups',
+        id: "dashboard",
+        title: 'Dashboard',
+        icon: '/icones/dashboard.svg',
+        href: '/p/product-overview/dashboard',
     }, {
         id: 'messaging',
         title: 'Messaging',
         icon: '/icones/messaging.svg',
         href: '/p/product-overview/messaging',
     }, {
-        id: 'knocard_link',
-        title: 'KnoCard Link',
-        icon: '/icones/knocard_link.svg',
-        href: '/p/product-overview/knocard_link',
+        id: 'goal-setting',
+        title: 'Goal Setting',
+        icon: '/icones/goal_setting.svg',
+        href: '/p/product-overview/goal-setting',
     }, {
         id: 'reporting',
         title: 'Reporting',

@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import { Reporting } from '@/components/icons/reporting';
-import { TeamsAndGroups } from '@/components/icons/team-and-groups';
+import { GoalSetting } from '@/components/icons/GoalSetting';
 import { Share } from '@/components/icons/share';
 import { Media } from '@/components/icons/media';
 import { Social } from '@/components/icons/social';
@@ -10,7 +10,7 @@ import { Referrals } from '@/components/icons/referrals';
 import { ScanBusinessCard } from '@/components/icons/scan_business_card';
 import { AddNewPropspects } from '@/components/icons/add_new_prospect';
 import { Messaging } from '@/components/icons/messaging';
-import { KnocardLink } from '@/components/icons/knocard_link';
+import { Dashboard } from '@/components/icons/Dashboard';
 import { Pipeline } from '@/components/icons/pipeline';
 
 const Header = ({ section, color }: { section: string, color: string }) => {
@@ -39,8 +39,8 @@ export function Icon({ section, className }: { section: string, color: string, c
 
             />
             break
-        case 'Team & Groups':
-            return <TeamsAndGroups className={className + " fill-white group-hover:fill-[#00BAF2]"}
+        case 'Goal Setting':
+            return <GoalSetting className={className + " fill-white group-hover:fill-[#00BAF2]"}
             />
             break
         case 'Share':
@@ -75,8 +75,8 @@ export function Icon({ section, className }: { section: string, color: string, c
             return <Messaging className={className + " fill-white group-hover:fill-[#00BAF2]"}
             />
             break
-        case 'KnoCard Link':
-            return <KnocardLink className={className + " fill-white group-hover:fill-[#00BAF2]"}
+        case 'Dashboard':
+            return <Dashboard className={className + " fill-white group-hover:fill-[#00BAF2]"}
             />
             break
         case 'Pipeline':
