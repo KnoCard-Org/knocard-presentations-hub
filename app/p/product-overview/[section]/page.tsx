@@ -32,7 +32,7 @@ function Page({ params }: { params: { section: string } }) {
 
             <main className={"md:max-w-5xl  mx-auto w-full  gap-2 md:gap-14 grid place-items-start md:grid-cols-2 md:mt-10 mt-5"}>
 
-                <div className='w-full md:h-[640px] h-[360px] relative  '
+                <div className='w-full  md:h-[640px] h-[360px] overflow-hidden relative  '
                     onClick={
                         () => setFullscreen(true)
                     }
@@ -50,7 +50,7 @@ function Page({ params }: { params: { section: string } }) {
                         alt={`Image `}
                         width={400}
                         height={600}
-                        className='absolute overflow-hidden w-auto h-[96%] md:rounded-[38px] rounded-[18px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+                        className='absolute overflow-hidden max-w-[160px] md:max-w-[290px] h-[96%] md:rounded-[38px] rounded-[18px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
 
                     />
                     {
