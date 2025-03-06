@@ -46,7 +46,7 @@ function Page({ params }: { params: { section: string } }) {
 
                     />
                     <Image
-                        src={`/images/${info.id}/${Index + 1}.png`}
+                        src={`/images/${info.id}/${Index}.png`}
                         alt={`Image `}
                         width={400}
                         height={600}
@@ -167,7 +167,7 @@ const content = [
                 ],
             },
         ],
-        images: 5,
+        images: 4,
         video: [
             "/videos/dashboard/1.mp4",
         ]
@@ -243,7 +243,7 @@ const content = [
                 ],
             },
         ],
-        images: 6,
+        images: 4,
         video: [
             "/videos/social/1.mp4",
         ]
@@ -280,7 +280,7 @@ const content = [
                 ],
             },
         ],
-        images: 6,
+        images: 4,
         video: [
             "/videos/feedback_forms/1.mp4",
         ]
@@ -317,7 +317,7 @@ const content = [
                 ],
             },
         ],
-        images: 4,
+        images: 5,
         video: [
             "/videos/referral/1.mp4",
         ]
@@ -389,7 +389,7 @@ const content = [
                 ],
             },
         ],
-        images: 5,
+        images: 4,
         video: [
             "/videos/add-prospect-client/1.mp4",
         ]
@@ -503,7 +503,7 @@ const content = [
                 ],
             },
         ],
-        images: 6,
+        images: 4,
         video: [
             "/videos/reporting/1.mp4",
         ]
@@ -542,7 +542,7 @@ const content = [
                 ],
             },
         ],
-        images: 6,
+        images: 7,
         video: [
             "/videos/pipeline/1.mp4",
         ]
