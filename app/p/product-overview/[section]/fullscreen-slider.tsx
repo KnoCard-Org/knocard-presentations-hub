@@ -60,7 +60,7 @@ function FullscreenImageSlider({ images, section }: { images: number, section: s
                                         />
                                         :
                                         <Image
-                                            src={`/images/${section}/${index + 1}.png`}
+                                            src={`/images/${section}/${index}.png`}
                                             alt='image'
                                             layout="fill"
                                             objectFit="cover"

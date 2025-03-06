@@ -1,10 +1,9 @@
 'use client'
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Knocard from './icones/Knocard';
 import Home from './icones/Home';
-import FullscreenVideoSlider from './FullscreenVideoSlider';
 import { useModal } from '@/components/navigator/Navigator';
 
 const Navbar = ({
@@ -12,8 +11,6 @@ const Navbar = ({
 }: {
     color: string
 }) => {
-    const [fullscreen, setFullscreen] = useState(false);
-    const [index, setIndex] = useState(0);
     const { openModal } = useModal();
 
     return (
@@ -40,14 +37,7 @@ const Navbar = ({
                     </motion.button>
                 </div>
             </nav>
-            {fullscreen && (
-                <FullscreenVideoSlider
-                    videos={['/videos/video1.mp4', '/videos/video1.mp4', '/videos/video1.mp4']}
-                    index={index}
-                    setIndex={setIndex}
-                    setFullscreen={setFullscreen}
-                />
-            )}
+
         </>
     );
 };
