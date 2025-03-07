@@ -39,11 +39,11 @@ function ImageList({ images, max, section }: { images: number, max: number, sect
                         className='absolute w-auto h-full rounded-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
                     />
                     <Image
-                        src={`/images/${section}/${i}.png`}
+                        src={`/images/${section}/${i === 0 ? 1 : i}.png`}
                         alt={`Image ${i}`}
                         width={100}
                         height={100}
-                        className='absolute w-[45px] h-[96%] rounded-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+                        className={`absolute w-[45px] h-[96%] rounded-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  ${i === 0 ? 'blur-sm' : ''}`}
                     />
                 </motion.li>
             ))}
@@ -72,11 +72,11 @@ function ImageList({ images, max, section }: { images: number, max: number, sect
                             className='absolute w-auto h-full rounded-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
                         />
                         <Image
-                            src={`/images/${section}/${i}.png`}
+                            src={`/images/${section}/${i === 0 ? 1 : i}.png`}
                             alt={`Image ${i}`}
                             width={100}
                             height={100}
-                            className='absolute bg-cover w-[45px] h-[96%] rounded-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+                            className={`absolute bg-cover w-[45px] h-[96%] rounded-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${i === 0 ? 'blur-sm' : ''}`}
                         />
                         {
                             i === 0 &&

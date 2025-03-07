@@ -50,7 +50,7 @@ function Page({ params }: { params: { section: string } }) {
                         alt={`Image `}
                         width={400}
                         height={600}
-                        className='absolute overflow-hidden max-w-[160px] md:max-w-[290px] h-[96%] md:rounded-[38px] rounded-[18px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+                        className={`absolute overflow-hidden max-w-[160px] md:max-w-[290px] h-[96%] md:rounded-[38px] rounded-[18px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${Index === 0 ? 'blur-sm' : ''}`}
 
                     />
                     {
