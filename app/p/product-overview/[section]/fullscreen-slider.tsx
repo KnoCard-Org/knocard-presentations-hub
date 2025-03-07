@@ -57,6 +57,7 @@ function FullscreenImageSlider({ images, section }: { images: number, section: s
                                             autoPlay
                                             controls
                                             className="w-full h-full"
+                                            disablePictureInPicture
                                         />
                                         :
                                         <Image

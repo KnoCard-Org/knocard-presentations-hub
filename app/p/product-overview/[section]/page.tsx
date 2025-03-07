@@ -46,7 +46,7 @@ function Page({ params }: { params: { section: string } }) {
 
                     />
                     <Image
-                        src={`/images/${info.id}/${Index}.png`}
+                        src={`/images/${info.id}/${Index === 0 ? 1 : Index}.png`}
                         alt={`Image `}
                         width={400}
                         height={600}
