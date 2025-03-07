@@ -112,6 +112,17 @@ export default function Modal({ isOpen, onClose }: {
 
 const list = [
     {
+        id: 'messaging',
+        title: 'Messaging',
+        icon: '/icones/messaging.svg',
+        href: '/p/product-overview/messaging',
+    }, {
+        id: "dashboard",
+        title: 'Dashboard',
+        icon: '/icones/dashboard.svg',
+        href: '/p/product-overview/dashboard',
+    },
+    {
         id: 'media',
         title: 'Media',
         icon: '/icones/media.svg',
@@ -146,16 +157,6 @@ const list = [
         title: 'Share',
         icon: '/icones/share.svg',
         href: '/p/product-overview/share',
-    }, {
-        id: "dashboard",
-        title: 'Dashboard',
-        icon: '/icones/dashboard.svg',
-        href: '/p/product-overview/dashboard',
-    }, {
-        id: 'messaging',
-        title: 'Messaging',
-        icon: '/icones/messaging.svg',
-        href: '/p/product-overview/messaging',
     }, {
         id: 'goal-setting',
         title: 'Goal Setting',
