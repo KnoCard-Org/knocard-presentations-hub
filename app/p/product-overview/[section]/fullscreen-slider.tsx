@@ -49,7 +49,11 @@ function FullscreenImageSlider({ images, section }: { images: number, section: s
                                 height={800}
                                 className="h-full w-auto transition-all duration-300 ease-in-out"
                             />
-                            <div className="absolute top-[2%] left-[5%] right-[5%] bottom-[3%] overflow-hidden rounded-[19px] transition-all duration-300 ease-in-out">
+                            <div className="absolute top-[2%] left-[5%] right-[5%] bottom-[3%] overflow-hidden md:rounded-[31px] rounded-[18px] transition-all duration-300 ease-in-out"
+                                style={{
+                                    borderRadius: isZoomed ? 39 : 31
+                                }}
+                            >
                                 {
                                     index === 0 ?
                                         <video
@@ -57,7 +61,6 @@ function FullscreenImageSlider({ images, section }: { images: number, section: s
                                             autoPlay
                                             controls
                                             className="w-full h-full"
-                                            disablePictureInPicture
                                         />
                                         :
                                         <Image
