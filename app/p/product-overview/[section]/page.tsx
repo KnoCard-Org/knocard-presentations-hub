@@ -441,27 +441,29 @@ const content = [
         bg: "/bg/goal_setting.jpg",
         faq: [
             {
-                q: "What are Team & Groups?",
+                q: "What is KnoCard Goal Setting?",
                 a: [
-                    "Turnkey marketing for members of a team, group, or company tied in to the KnoCard platform.",
-                    "Dedicated media files and landing pages are included by default based on the leader's selection.",
-                    "All members will follow the leader's social posts to ensure effective team communication.",
+                    "KnoCard Goal Setting is a built-in system that helps users define, track, and achieve their objectives.",
+                    "It allows users to set clear, measurable goals tied to their business and networking efforts.",
+                    "Designed for entrepreneurs, sales professionals, and network marketers, it ensures accountability and consistent progress."
                 ],
             },
             {
-                q: "How does Team & Groups work?",
+                q: "How Does It Work?",
                 a: [
-                    "Upon signup, the user selects their associated team or group.",
-                    "Media files and landing page are automatically added to KnoCard.",
-                    "Users are ready to start sharing immediately.",
+                    "Set Goals – Users establish specific objectives related to sales, engagement, or growth.",
+                    "Break It Down – Goals are structured into manageable steps with clear timelines.",
+                    "Track Progress – Real-time reporting provides insights on goal completion and performance.",
+                    "Stay Accountable – Automated reminders and alerts keep users focused and on track.",
+                    "Adjust & Improve – Users can refine goals based on performance data to maximize success."
                 ],
             },
             {
                 q: "Competitor's Edge",
                 a: [
-                    "Unlike corporate replica websites or mobile platforms, KnoCard allows users to add their own content.",
-                    "Utilizes data analytics and tracking to eliminate rejection and promote success.",
-                    "When used with KnoCard Link, it offers unparalleled coaching options.",
+                    "Integrated Tracking – Unlike traditional goal-setting tools, KnoCard connects goal tracking directly to business activities.",
+                    "Smart Insights – Users receive real-time data, helping them make informed decisions and improve results.",
+                    "Customizable for Entrepreneurs – Tailored specifically for professionals who rely on networking and business development."
                 ],
             },
         ],
